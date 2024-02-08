@@ -1,115 +1,47 @@
+:root { --credits: "lemocha 2024"; }
 body
 {
-    color: white; background-color: black;
-    
-    transition-duration: .5s;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    
-    background-image: url("Pictures/lemocha/lemocha tile (dark).png");
-    background-repeat: repeat;
-}
+	color: white; background-color: rgb(8, 8, 8);
+	font-family: Arial, sans-serif;
 
-.header
+	user-select: none;
+	image-rendering: pixelated;
+}
+header:nth-of-type(3) { margin-top: 20px; }
+a
 {
-    padding: 0;
-    
-    background-color: rgba(0, 0, 0, 0.5);
-    
-    transition-duration: .5s;
+	color: #4dbcff;
+	text-decoration: none;
 }
-
-hr
+img
 {
-    //margin: 2px;
-    
-    border: 1px solid grey;
-    border-radius: 1px;
+	position: relative;
+	width: 20px; height: 20px;
+	margin-top: 2px;
+	top: 5px;
 }
 
 
-.h1     /* not to be confused with "h1" */
+
+/* === FOOTER === */
+.footer
 {
-    margin-right: 12px;
-    
-    font-size: 32px;
-    text-align: center;
-}
+	display: flex;
+	position: absolute;
+	width: 100%; height: 100%;
+	left: 0; top: -2px;
 
-.mainDiv
+	align-items: flex-end;
+	border-bottom: 2px solid white;
+	pointer-events: none;
+}
+.footer img
 {
-    width: 100%; height: 100%;
-    justify-content: center;
-    
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: auto;
-    
-    transition-duration: .5s;
+	width: 94px; height: 32px;
+	margin: 0 8px 5px 8px;
 }
-
-
-button
-{	
-    width: 23%; height: 50px;
-    margin: 2px 5px;
-    padding: 0 20px;
-	
-    border-radius: 10px;
-    
-    transition-duration: 0.5s;
-    cursor: pointer;
-    
-    font-size: 1.1rem;
-    text-align: center;
-    text-decoration: none;
-    
-    
-    color: rgb(235, 209, 250); background-color: rgba(0, 0, 0, 0.5);
-    
-    border: 2px solid rgb(235, 209, 250);
-}
-
-button:hover 
-{
-    color: black; background-color: rgb(235, 209, 250);
-}
+.footer::after { content: var(--credits); }
 
 
 
-.chungusButton
-{
-    width: 100%; height: 60px;
-}
-
-
-.credits
-{
-    //margin-left: -55px;
-    bottom: 4px;
-    //position: relative;
-}
-
-
-
-@media (max-width: 800px) 
-{
-    button
-    {
-        width: 100%;
-    }
-}
-
-
-@media (min-height: 800px) 
-{
-    button
-    {
-        height: 15%;
-    }
-}
-
-
-/* Code by lemocha  -  lemocha7.github.io */
+/* lemocha - lemocha7.github.io */
